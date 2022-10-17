@@ -1,0 +1,138 @@
+:root {
+  --blue: #5F9EA0;
+  --babyblue: #89CFF0;
+  --lightblue: #ADD8E6;
+  --celadon: #AFE1AF;
+  --emeraldgreen: #50C878;
+  --darkgreen: #097969;
+  --milpink: #F3CFC6;
+  --lightpink: #FFB6C1;
+  --darkpink: #FF69B4;
+}
+
+body{
+  font-family: 'Alegreya SC', Serif;
+}
+
+.flex-container {display: flex;
+justify-content: space-between;
+flex-direction: column;
+box-sizing: border-box;
+width: auto;
+height: 300px;
+border: 5px solid white;}
+
+.one {
+  flex-basis: 100px;
+  background: linear-gradient(45deg, var(--babyblue), var(--lightblue)50%, var(--blue));
+  border: 3px solid var(--lightblue);
+}
+
+@keyframes circle {
+  from {background-color: #F4F6F7; top:5px; left: 45px;}
+ to {background-color:var(--darkgreen); top:250px; left:45px;}
+}
+
+@keyframes one {
+ from {background-color: #F4F6F7; top:11px; left: 145px;}
+ to {background-color:var(--darkpink); top:250px; left:145px;} 
+}
+
+@keyframes two {
+ from {background-color: #F4F6F7; top:30px; left: 200px;}
+ to {background-color:var(--celadon); top:250px; left:200px;} 
+}
+
+@keyframes three {
+ from {background-color: #F4F6F7; top:40px; left: 250px;}
+ to {background-color:var(--babyblue); top:250px; left:250px;} 
+}
+
+@keyframes four {
+ from {background-color: #F4F6F7; top:50px; left: 290px;}
+ to {background-color:var(--emeraldgreen); top:250px; left:290px;} 
+}
+
+@keyframes five {
+ from {background-color: #F4F6F7; top:60px; left: 300px;}
+ to {background-color:var(--lightblue); top:250px; left:300px;} 
+}
+
+#dot {height: 25px;
+  width: 25px;
+  background-color: #F4F6F7;
+  border-radius: 50%;
+  display: inline-block;  
+  position: relative;
+  top: 5px;
+  left: 45px;
+  animation: circle 10s ease-in-out 10;   
+}
+
+#dot-one {height: 25px;
+  width: 25px;
+  background-color: #F4F6F7;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 11px;
+  left: 145px;
+   animation: one 10s ease-in-out 10;  
+}
+
+#dot-two {height: 25px;
+  width: 25px;
+  background-color: #F4F6F7;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 200px;
+  animation: two 10s ease-in-out 10;
+}
+
+#dot-three {height: 25px;
+  width: 25px;
+  background-color: #F4F6F7;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  left: 250px;
+  animation: three 10s ease-in-out 10;
+}
+
+#dot-four {height: 25px;
+  width: 25px;
+  background-color: #F4F6F7;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 290px;
+  animation: four 10s ease-in-out 10;
+}
+
+#dot-five {height: 25px;
+  width: 25px;
+  background-color: #F4F6F7;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 60px;
+  left: 300px;
+  animation: five 10s ease-in-out 10;
+}
+
+
+.two {
+  flex-basis: 100px;
+  background: linear-gradient(45deg, var(--celadon), var(--emeraldgreen)50%, var(--darkgreen));
+  border: 3px solid var(--celadon);  
+}
+
+.three {
+  flex-basis: 100px;
+  background: linear-gradient(45deg, var(--milpink), var(--lightpink)50%, var(--darkpink));
+  border: 3px solid var(--milpink);
+}
